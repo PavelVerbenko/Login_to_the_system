@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preload" href="src/fonts/lexend/Lexend-Light.ttf" as="style">
+    <link rel="preload" href="src/fonts/lexend/Lexend-Medium.ttf" as="style">
+    <link rel="preload" href="src/fonts/lexend/Lexend-SemiBold.ttf" as="style">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <section class="library">
+        <div class="container">
+            <h2 class="library-title">Request A Quote — let’s work together.</h2>
+            <p class="library-subtitle">Got a project? Drop me a line if you want to work together on something exciting. Or do you need our help? Feel free to contact us.</p>
+            
+            
+                <div class="books-flex">
+                    <form id="book-form" action="#">
+                        <label class="books-label" for="book-name">Book name</label>
+                    <input placeholder="Books name" class="books-input" type="text" id="book-name">
+
+                    <label class="books-label" for="book-author">Book author</label>
+                    <input placeholder="Book author" class="books-input" type="text" id="book-author">
+
+                    <label class="books-label" for="book-isbn">Book ISBN</label>
+                    <input placeholder="Book ISBN" class="books-input" type="text" id="book-isbn">
+                     </form>
+
+                    <button type="sumbit" class="books-button">Add book</button>
+                </div>
+
+                
+
+            <table class="table" id="book-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                    </tr>
+                </thead>
+                <tbody id="book-list"></tbody>
+            </table>
+        </div>
+    </section>
+    <script type="module" src="src/js/index.js"></script>
+</body>
+</html>
